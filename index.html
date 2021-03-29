@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="screen-wrapper">
+        <div class="navBar">
+<div class="menu-link">HOME</div>
+<div class="menu-link">ABOUT</div>
+<div class="menu-link">GITHUB</div>
+        </div>
+        <div class="col1">
+          <div class="col1-inner">
+            <h1>Covid Dashboard</h1>
+            <div class="overview">
+                <div class="card card-red">
+                    <div class="blink red"></div>
+                    <div class="card-text">
+                        <h1 id="active-api"></h1>
+                        <h2>ACTIVE</h2>
+                    </div>
+                </div>
+                <div class="card card-grey">
+                    <div class="blink grey"></div>
+                <div class="card-text">
+                    <h1 id="confirmed-api"></h1>
+                    <h2>CONFIRMED</h2>
+                </div>
+            </div>
+                <div class="card card-green">
+                    <div class="blink green"></div>
+                <div class="card-text">
+                    <h1 id="recovered-api"></h1>
+                    <h2>RECOVERED</h2>
+                </div></div>
+                <div class="card card-orange"><div class="blink orange"></div>
+                <div class="card-text">
+                    <h1 id="deaths-api"></h1>
+                    <h2>DEATHS</h2>
+                </div></div>
+            </div>
+            <div class="chart-div">
+            <div class="chart-wrapper">
+             <div id="chart-area"></div>
+                <div id="chart-bar"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+        <div class="col2">
+        <div class="col2wrap">
+            <div class="countryhead">Select a country</div>
+            <div class="countryselected">
+              <div id="countryselected"></div>
+            </div>
+            <div class="country-list">
+            <div id="country-list"></div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
